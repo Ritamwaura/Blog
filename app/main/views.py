@@ -26,7 +26,7 @@ def indexblog():
     
     random=urllib.request.urlopen('http://quotes.stormconsultancy.co.uk/random.json').read()
     get_source_response = json.loads(random)
-    return render_template('index.html',index=index, title=title, post=post, random=get_source_response, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 )
+    return render_template('index.html', title=title, post=post, random=get_source_response, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 )
 
 @main.route('/user/<uname>')
 def profile(uname):
