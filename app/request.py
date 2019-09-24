@@ -1,9 +1,9 @@
-import requests
+from urllib import request
 from config import Config
 from .models import Quotes
 quotes_url = Config.QUOTES_URL
 def getQuotes():
-   random_quote = requests.get(quotes_url)
+   random_quote = request.open(quotes_url)
    new_quote = random_quote.json()
    author = new_quote.get("author")
    quote = new_quote.get("quote")
