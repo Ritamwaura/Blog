@@ -21,10 +21,6 @@ def index():
    quote1 = getQuotes()
    quote2 = getQuotes()
    quote3 = getQuotes()
-   
-
-   
-   
 @main.route('/')
 def index():
     '''
