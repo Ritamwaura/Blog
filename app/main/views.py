@@ -21,7 +21,7 @@ def index():
    quote1 = getQuotes()
    quote2 = getQuotes()
    quote3 = getQuotes()
-   # quote4 = getQuote
+   # quote4 = getQuo
 
    
    
