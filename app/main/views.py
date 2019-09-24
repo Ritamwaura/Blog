@@ -10,30 +10,23 @@ import datetime
 import json 
 import urllib.request,json
 from ..request import getQuotes 
+
 @main.route('/')
-def index():
-   blogs = Blog.query.all()
-   '''
-   View root page function that returns the index page and its q
-   '''
-   title = 'Home - Welcome to The best Blog Website Online'
-   quote = getQuotes()
-   quote1 = getQuotes()
-   quote2 = getQuotes()
-   quote3 = getQuotes()
-   return render_template('index.html', title = title, blogs=blogs, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 
-@main.route('/')
-#def indexblog():
+def indexblog():
     '''
     view root page function that returns index page & data
     '''
     posts = Post.query.order_by(Post.date_posted.desc()).limit(3).all()
 
     title = 'Home - Welcome to the M.M.A Blog'
+    quote = getQuotes()
+    quote1 = getQuotes()
+    quote2 = getQuotes()
+    quote3 = getQuotes()
     
     random=urllib.request.urlopen('http://quotes.stormconsultancy.co.uk/random.json').read()
     get_source_response = json.loads(random)
-    return render_template('index.html',index=index, title=title, post=post, random=get_source_response)
+    return render_template('index.html',index=index, title=title, post=post, random=get_source_response, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 )
 
 @main.route('/user/<uname>')
 def profile(uname):
