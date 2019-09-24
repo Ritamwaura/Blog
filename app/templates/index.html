@@ -6,6 +6,8 @@
     <h1><i><b></b>THE Rita BLOG</i></b>
     </h1>
 </div>
+
+
 <div class="container" style="padding-bottom: 30px;">
     <a href="{{url_for('main.new_post')}}" class="btn btn-success">New post</a>heroku run python3.6 manage.py db upgrade
 </div>
@@ -20,3 +22,22 @@
 
 </div>
 {%endblock%}
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+    <br>
+    <br>
+    <div class="card">
+        <h4 class="card-header">{{ quote.author }}</h4>
+        <p class="card-body">{{ quote.quote }}</p>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+        <h4 class="card-header">{{ quote1.author }}</h4>
+        <p class="card-body">{{ quote1.quote }}</p>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+        <h4 class="card-header">{{ quote2.author }}</h4>
+        <p class="card-body">{{ quote2.quote }}</p>
+    </div>
