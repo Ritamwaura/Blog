@@ -21,7 +21,7 @@ def index():
    quote1 = getQuotes()
    quote2 = getQuotes()
    quote3 = getQuotes()
-   
+   return render_template('index.html', title = title, blogs=blogs, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 
 @main.route('/')
 def index():
     '''
