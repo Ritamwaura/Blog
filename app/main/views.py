@@ -24,11 +24,7 @@ def index():
    # quote4 = getQuotes()
    # quote5 = getQuotes()
    # quote6 = getQuotes()
-   # quote7 = getQuotes()
-   # quote8 = getQuotes()
-   # quote9 = getQuotes()
-   # quote10 = getQuotes()
-   # quote11 = getQuotes()
+   # quo
 @main.route('/')
 def index():
     '''
