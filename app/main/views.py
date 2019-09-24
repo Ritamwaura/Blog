@@ -22,7 +22,7 @@ def index():
    quote2 = getQuotes()
    quote3 = getQuotes()
    # quote4 = getQuotes()
-   # quote5 = ge
+   # quote5 =
    
    
 @main.route('/')
