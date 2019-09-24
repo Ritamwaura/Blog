@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/Rita/Documents/ip- blog/virtual/bin/python" "$0" "$@"
-' '''
+#!/home/rita/Desktop/BLOG/virtual/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
