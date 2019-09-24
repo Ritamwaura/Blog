@@ -22,7 +22,6 @@ Run chmod a+x on the terminal
 Run ./start.sh on the terminal to open the app
 ## Known Bugs
 There are currently no known bugs in the application
-
 ## Technologies Used
 Python3.7
 Flask
