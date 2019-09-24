@@ -11,7 +11,7 @@ Delete a blog post	On the blog post, click on the delete post button
 Delete comments from a post	On the comments, click the delete comment button
 User	View Blog post on the site	Go to the home page to view the blog posts
 Comment on a blog post	Click comment on any post
-Subscribe to the blog	Fill in the subscription form and submit
+Subscribe to the blog	Fill in the  subscription form and submit
 ## Setup/Installation requirements
 Ensure you have Python3.7 installed on your computer.
 Clone this respository and navigate to where it has been saved.
