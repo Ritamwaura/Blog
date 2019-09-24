@@ -23,8 +23,7 @@ def index():
    quote3 = getQuotes()
    return render_template('index.html', title = title, blogs=blogs, quote=quote ,quote1=quote1,quote2=quote2,quote3=quote3 
 @main.route('/')
-def indexblog
-():
+#def indexblog():
     '''
     view root page function that returns index page & data
     '''
