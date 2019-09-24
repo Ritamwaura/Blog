@@ -10,7 +10,25 @@ import datetime
 import json 
 import urllib.request,json
 from ..request import getQuotes 
-
+@main.route('/')
+def index():
+   blogs = Blog.query.all()
+   '''
+   View root page function that returns the index page and its q
+   '''
+   title = 'Home - Welcome to The best Blog Website Online'
+   quote = getQuotes()
+   quote1 = getQuotes()
+   quote2 = getQuotes()
+   quote3 = getQuotes()
+   # quote4 = getQuotes()
+   # quote5 = getQuotes()
+   # quote6 = getQuotes()
+   # quote7 = getQuotes()
+   # quote8 = getQuotes()
+   # quote9 = getQuotes()
+   # quote10 = getQuotes()
+   # quote11 = getQuotes()
 @main.route('/')
 def index():
     '''
