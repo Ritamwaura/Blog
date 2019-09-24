@@ -7,7 +7,7 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS= True
     SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://rita:p@localhost/blogapp'
-
+    QUOTES_URL ='http://quotes.stormconsultancy.co.uk/random.json'
     # email configs
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587

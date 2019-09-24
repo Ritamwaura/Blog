@@ -9,7 +9,7 @@ from ..email import mail_message
 import datetime
 import json 
 import urllib.request,json
-
+from ..request import getQuotes 
 
 @main.route('/')
 def index():

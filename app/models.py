@@ -87,3 +87,9 @@ class Comment(db.Model):
     def get_comments(cls, post):
         comments = Comment.query.filter_by(post=post.id).all()
         return comments
+    class Quotes():
+    def __init__(self,authour,quote,permalink):
+        self.authour=authour
+        self.quote=quote
+        self.permalink=permalink
+            
